@@ -1,0 +1,45 @@
+# Created by newuser for 5.8
+
+# Tab Custom
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' menu select
+
+
+# Name
+
+PROMPT='%F{160}%n%f %F{051}%c%f % '
+
+# open command
+# alias open="cmd.exe /C start"
+
+
+# brew PATH
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+
+## pyenv PATH
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
+
+# jupyter lab and notebook setting
+
+alias 'jnb'='jupyter notebook --NotebookApp.use_redirect_file=False'
+alias 'jlab'='jupyter lab --NotebookApp.use_redirect_file=False'
+
+
+
+# back to home
+alias 'backhome'='cd  /mnt/c/Users/ryosimon'
+
+
+
+# bazel init
+alias bazel='/usr/local/bazel/2.0.0/lib/bazel/bin/bazel'
+
+
+#alias of oF
+alias 'oF'='cd /mnt/c/Users/ryosimon/Documents/of_v0.11.0_vs2017_release'
